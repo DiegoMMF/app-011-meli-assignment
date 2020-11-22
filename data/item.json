@@ -1,0 +1,20 @@
+{
+    "author": {
+        "name": "",
+        "lastname": ""
+    },
+    "item": {
+        "id": "",
+        "title": "",
+        "price": {
+            "currency": "",
+            "amount": "",
+            "decimals": ""
+        },
+        "picture": "",
+        "condition": "",
+        "free_shipping": "",
+        "sold_quantity": 0,
+        "description": ""
+    }
+}

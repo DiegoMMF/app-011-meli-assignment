@@ -1,0 +1,317 @@
+{
+    "id": "MLA818555410",
+    "site_id": "MLA",
+    "title": "Asrock X399 Taichi Str4 Sata 6gb/s Usb 3.1/3.0 Atx Amd Mo...",
+    "subtitle": null,
+    "seller_id": 161008662,
+    "category_id": "MLA1692",
+    "official_store_id": null,
+    "price": 88969,
+    "base_price": 88969,
+    "original_price": null,
+    "currency_id": "ARS",
+    "initial_quantity": 2,
+    "available_quantity": 1,
+    "sold_quantity": 0,
+    "sale_terms": [
+        {
+            "id": "WARRANTY_TIME",
+            "name": "Tiempo de garantía",
+            "value_id": null,
+            "value_name": "90 días",
+            "value_struct": {
+                "number": 90,
+                "unit": "días"
+            },
+            "values": [
+                {
+                    "id": null,
+                    "name": "90 días",
+                    "struct": {
+                        "number": 90,
+                        "unit": "días"
+                    }
+                }
+            ]
+        },
+        {
+            "id": "WARRANTY_TYPE",
+            "name": "Tipo de garantía",
+            "value_id": "2230280",
+            "value_name": "Garantía del vendedor",
+            "value_struct": null,
+            "values": [
+                {
+                    "id": "2230280",
+                    "name": "Garantía del vendedor",
+                    "struct": null
+                }
+            ]
+        }
+    ],
+    "buying_mode": "buy_it_now",
+    "listing_type_id": "gold_special",
+    "start_time": "2019-10-07T16:30:38.000Z",
+    "stop_time": "2039-10-02T04:00:00.000Z",
+    "condition": "new",
+    "permalink": "https://articulo.mercadolibre.com.ar/MLA-818555410-asrock-x399-taichi-str4-sata-6gbs-usb-3130-atx-amd-mo-_JM",
+    "thumbnail_id": "792801-MLA32449107349_102019",
+    "thumbnail": "http://http2.mlstatic.com/D_792801-MLA32449107349_102019-I.jpg",
+    "secure_thumbnail": "https://http2.mlstatic.com/D_792801-MLA32449107349_102019-I.jpg",
+    "pictures": [
+        {
+            "id": "792801-MLA32449107349_102019",
+            "url": "http://http2.mlstatic.com/D_792801-MLA32449107349_102019-O.jpg",
+            "secure_url": "https://http2.mlstatic.com/D_792801-MLA32449107349_102019-O.jpg",
+            "size": "500x362",
+            "max_size": "1918x1390",
+            "quality": ""
+        },
+        {
+            "id": "860676-MLA32449107355_102019",
+            "url": "http://http2.mlstatic.com/D_860676-MLA32449107355_102019-O.jpg",
+            "secure_url": "https://http2.mlstatic.com/D_860676-MLA32449107355_102019-O.jpg",
+            "size": "500x379",
+            "max_size": "1920x1459",
+            "quality": ""
+        },
+        {
+            "id": "612632-MLA32449107351_102019",
+            "url": "http://http2.mlstatic.com/D_612632-MLA32449107351_102019-O.jpg",
+            "secure_url": "https://http2.mlstatic.com/D_612632-MLA32449107351_102019-O.jpg",
+            "size": "278x500",
+            "max_size": "1069x1920",
+            "quality": ""
+        },
+        {
+            "id": "704902-MLA32449107348_102019",
+            "url": "http://http2.mlstatic.com/D_704902-MLA32449107348_102019-O.jpg",
+            "secure_url": "https://http2.mlstatic.com/D_704902-MLA32449107348_102019-O.jpg",
+            "size": "421x500",
+            "max_size": "1618x1920",
+            "quality": ""
+        },
+        {
+            "id": "977786-MLA32449107353_102019",
+            "url": "http://http2.mlstatic.com/D_977786-MLA32449107353_102019-O.jpg",
+            "secure_url": "https://http2.mlstatic.com/D_977786-MLA32449107353_102019-O.jpg",
+            "size": "272x500",
+            "max_size": "1045x1920",
+            "quality": ""
+        },
+        {
+            "id": "842642-MLA32449107354_102019",
+            "url": "http://http2.mlstatic.com/D_842642-MLA32449107354_102019-O.jpg",
+            "secure_url": "https://http2.mlstatic.com/D_842642-MLA32449107354_102019-O.jpg",
+            "size": "500x238",
+            "max_size": "1920x917",
+            "quality": ""
+        },
+        {
+            "id": "671514-MLA32735513199_112019",
+            "url": "http://http2.mlstatic.com/D_671514-MLA32735513199_112019-O.jpg",
+            "secure_url": "https://http2.mlstatic.com/D_671514-MLA32735513199_112019-O.jpg",
+            "size": "352x500",
+            "max_size": "942x1338",
+            "quality": ""
+        },
+        {
+            "id": "642736-MLA32449107352_102019",
+            "url": "http://http2.mlstatic.com/D_642736-MLA32449107352_102019-O.jpg",
+            "secure_url": "https://http2.mlstatic.com/D_642736-MLA32449107352_102019-O.jpg",
+            "size": "356x500",
+            "max_size": "942x1320",
+            "quality": ""
+        },
+        {
+            "id": "707789-MLA32449107350_102019",
+            "url": "http://http2.mlstatic.com/D_707789-MLA32449107350_102019-O.jpg",
+            "secure_url": "https://http2.mlstatic.com/D_707789-MLA32449107350_102019-O.jpg",
+            "size": "338x500",
+            "max_size": "888x1312",
+            "quality": ""
+        },
+        {
+            "id": "629079-MLA32449107357_102019",
+            "url": "http://http2.mlstatic.com/D_629079-MLA32449107357_102019-O.jpg",
+            "secure_url": "https://http2.mlstatic.com/D_629079-MLA32449107357_102019-O.jpg",
+            "size": "369x500",
+            "max_size": "942x1276",
+            "quality": ""
+        }
+    ],
+    "video_id": null,
+    "descriptions": [
+        {
+            "id": "MLA818555410-2327763126"
+        }
+    ],
+    "accepts_mercadopago": true,
+    "non_mercado_pago_payment_methods": [],
+    "shipping": {
+        "mode": "me2",
+        "free_methods": [
+            {
+                "id": 73328,
+                "rule": {
+                    "default": true,
+                    "free_mode": "country",
+                    "free_shipping_flag": true,
+                    "value": null
+                }
+            }
+        ],
+        "tags": [
+            "mandatory_free_shipping"
+        ],
+        "dimensions": null,
+        "local_pick_up": true,
+        "free_shipping": true,
+        "logistic_type": "cross_docking",
+        "store_pick_up": false
+    },
+    "international_delivery_mode": "none",
+    "seller_address": {
+        "city": {
+            "name": "Microcentro"
+        },
+        "state": {
+            "id": "AR-C",
+            "name": "Capital Federal"
+        },
+        "country": {
+            "id": "AR",
+            "name": "Argentina"
+        },
+        "search_location": {
+            "neighborhood": {
+                "id": "TUxBQk1PTjUxOTJa",
+                "name": "Monserrat"
+            },
+            "city": {
+                "id": "TUxBQ0NBUGZlZG1sYQ",
+                "name": "Capital Federal"
+            },
+            "state": {
+                "id": "TUxBUENBUGw3M2E1",
+                "name": "Capital Federal"
+            }
+        },
+        "id": 1143097867
+    },
+    "seller_contact": null,
+    "location": {},
+    "coverage_areas": [],
+    "attributes": [
+        {
+            "id": "WARRANTY_TYPE",
+            "name": "Tipo de garantía",
+            "value_id": null,
+            "value_name": "90 dias",
+            "value_struct": null,
+            "values": [
+                {
+                    "id": null,
+                    "name": "90 dias",
+                    "struct": null
+                }
+            ],
+            "attribute_group_id": "",
+            "attribute_group_name": ""
+        },
+        {
+            "id": "BRAND",
+            "name": "Marca",
+            "value_id": "18651",
+            "value_name": "ASRock",
+            "value_struct": null,
+            "values": [
+                {
+                    "id": "18651",
+                    "name": "ASRock",
+                    "struct": null
+                }
+            ],
+            "attribute_group_id": "OTHERS",
+            "attribute_group_name": "Otros"
+        },
+        {
+            "id": "ITEM_CONDITION",
+            "name": "Condición del ítem",
+            "value_id": "2230284",
+            "value_name": "Nuevo",
+            "value_struct": null,
+            "values": [
+                {
+                    "id": "2230284",
+                    "name": "Nuevo",
+                    "struct": null
+                }
+            ],
+            "attribute_group_id": "OTHERS",
+            "attribute_group_name": "Otros"
+        },
+        {
+            "id": "MAX_SUPPORTED_RAM_MEMORY_CAPACITY",
+            "name": "Capacidad máxima soportada de la memoria RAM",
+            "value_id": null,
+            "value_name": "6 GB",
+            "value_struct": {
+                "number": 6,
+                "unit": "GB"
+            },
+            "values": [
+                {
+                    "id": null,
+                    "name": "6 GB",
+                    "struct": {
+                        "number": 6,
+                        "unit": "GB"
+                    }
+                }
+            ],
+            "attribute_group_id": "OTHERS",
+            "attribute_group_name": "Otros"
+        },
+        {
+            "id": "MODEL",
+            "name": "Modelo",
+            "value_id": null,
+            "value_name": "X399 TAICHI",
+            "value_struct": null,
+            "values": [
+                {
+                    "id": null,
+                    "name": "X399 TAICHI",
+                    "struct": null
+                }
+            ],
+            "attribute_group_id": "OTHERS",
+            "attribute_group_name": "Otros"
+        }
+    ],
+    "warnings": [],
+    "listing_source": "",
+    "variations": [],
+    "status": "active",
+    "sub_status": [],
+    "tags": [
+        "good_quality_picture",
+        "good_quality_thumbnail",
+        "incomplete_technical_specs",
+        "brand_verified",
+        "immediate_payment",
+        "cart_eligible"
+    ],
+    "warranty": "Garantía del vendedor: 90 días",
+    "catalog_product_id": null,
+    "domain_id": "MLA-COMPUTER_MOTHERBOARDS",
+    "parent_item_id": null,
+    "differential_pricing": null,
+    "deal_ids": [],
+    "automatic_relist": false,
+    "date_created": "2019-10-07T16:30:39.000Z",
+    "last_updated": "2020-11-21T11:13:48.000Z",
+    "health": 0.6,
+    "catalog_listing": false
+}

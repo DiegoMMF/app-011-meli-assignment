@@ -1,0 +1,10 @@
+.App {
+  background-color: #EEEEEE;
+  height: 100vh;
+}
+
+.search-bar {
+  display: flex;
+  justify-content: center;
+}
+
