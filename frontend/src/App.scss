@@ -1,0 +1,13 @@
+@use './sass/details';
+@use './sass/results';
+@use './sass/search';
+
+*|* {
+  padding: 0%;
+  margin: 0%;
+  /* border: gray 1px solid; */
+}
+.App {
+  background-color: $light-gray;
+  height: 100vh;
+}

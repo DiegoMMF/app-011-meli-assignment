@@ -1,0 +1,25 @@
+$meli-yellow: #ffe600;
+$meli-light-gray: #eeeeee;
+$meli-medium-gray: #999999;
+$meli-black: #333333;
+
+$meli-search-font-size: 18px;
+
+.search-bar {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    background-color: $meli-yellow;
+    padding: 5px 32px;
+}
+
+.inputspace {
+    height: 100%;
+    width: 70%;
+    margin-left: 10px;
+    font-size: 18px;
+}
+
+button {
+    height: 100%;
+}

@@ -3,7 +3,7 @@ import '../App.css'
 import lupa from '../assets/ic_Search.png'
 import mlbrand from '../assets/Logo_ML.png'
 
-export default function SearchBox() {
+export default function SearchBar() {
     return (
         <div className="search-bar">
             <img src={mlbrand} alt="logo" />

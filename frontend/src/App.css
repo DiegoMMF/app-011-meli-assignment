@@ -3,15 +3,21 @@
   margin: 0%;
   /* border: gray 1px solid; */
 }
+
 .App {
   background-color: #EEEEEE;
   height: 100vh;
 }
 
 .search-bar {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
   background-color: #FFE600;
   padding: 5px 32px;
 }
@@ -27,3 +33,4 @@
 button {
   height: 100%;
 }
+/*# sourceMappingURL=App.css.map */
