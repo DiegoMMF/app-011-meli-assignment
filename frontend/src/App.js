@@ -1,8 +1,7 @@
 import './App.css';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import ProductDetails from './pages/ProductDetails.jsx';
-import Results from './pages/Results.jsx';
-import Home from './pages/Home';
+import SearchResults from './pages/SearchResults.jsx';
 import SearchBar from './components/SearchBar';
 
 function App() {
@@ -12,7 +11,7 @@ function App() {
         <SearchBar />
         <Switch>
           <Route exact path={"/items"} component={ProductDetails} />
-          <Route exact path={"/items/:id"} component={Results} />
+          <Route exact path={"/items/:id"} component={SearchResults} />
         </Switch>
       </Router>
     </div>

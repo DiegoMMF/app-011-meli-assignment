@@ -1,4 +1,4 @@
-{
+const dummyQuery = JSON.parse({
     "author": {
         "name": "Diego M.",
         "lastname": "Maldini Freyre"
@@ -623,4 +623,6 @@
             "free_shipping": false
         }
     ]
-}
+})
+
+module.exports = dummyQuery;

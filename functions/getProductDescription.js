@@ -22,30 +22,27 @@ const transform = inputObject => {
             condition: inputObject.condition,
             free_shipping: inputObject.shipping.free_shipping,
             sold_quantity: inputObject.sold_quantity,
-            description: ""
+            description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium repellat et molestias hic fugiat quisquam quos eaque deleniti odio quas a officia tempore modi nulla, quod, culpa saepe animi magnam? Expedita deserunt qui, quod recusandae debitis optio quas aut nam quo accusantium iure, amet quaerat totam dignissimos, ratione rerum commodi."
         }
     }
     return outputObject;
 }
 
-const getDescriptionString = (object) => {
+/* const getDescriptionString = (object) => {
     const itemDescriptionURL = `https://api.mercadolibre.com/items/${object.item.id}/description`;
     axios.get(itemDescriptionURL)
-        .then(response => {
-            object.item.description = response.data.plain_text;
-            return object
-        })
+        .then(response => response.data.plain_text)
+        .then(res => { return res })
         .catch(error => console.log(error))
-
-};
+}; */
 
 const getProductDescription = (req, res) => {
     const itemURL = `https://api.mercadolibre.com/items/${req.params.id}`
     axios.get(itemURL)
-        .then(response => transform(response.data))
-        .then(object => object.item.description = getDescriptionString(object))
+        .then(response => res.send(transform(response.data)))
+        // .then(response => transform(response.data))
+        // .then(object => getDescriptionString(object))
         .catch(error => console.log(error))
-    res.json("Hola");
 };
 
 module.exports = getProductDescription;

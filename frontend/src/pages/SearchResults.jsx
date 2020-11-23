@@ -1,9 +1,10 @@
 import React from 'react'
+import List from '../components/List';
 
 export default function Results() {
     return (
         <div>
-            Results
+            <List />
         </div>
     )
 }
