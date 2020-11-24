@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+import React, { useState } from 'react'
 
 const dummyProduct = {
     author: {
@@ -23,7 +23,7 @@ const dummyProduct = {
 
 // export default function ItemInList({ itemsList }) {
 export default function ItemInList({ itemsList }) {
-    const [product, setProduct] = useState(dummyProduct)
+    const [product] = useState(dummyProduct)
     return (
         // itemsList.map(product => 
         <div className="product-container">
