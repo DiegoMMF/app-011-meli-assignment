@@ -15,3 +15,33 @@ $meli-location-font-size: 12px;
 $meli-img-height: 180px;
 $meli-img-width: 180px;
 $meli-border-radius: 4px;
+
+.list-img {
+    padding: $meli-thin-padding;
+    width: $meli-img-width;
+    height: $meli-img-height;
+    border-radius: $meli-border-radius;
+}
+
+.single-line {
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    padding-top: $meli-thin-padding;
+    padding-bottom: $meli-wide-padding;
+    h1 {
+        font-size: $meli-price-font-size;
+    }
+    p {
+        font-size: $meli-location-font-size;
+    }
+}
+
+.free-shipping-logo {
+    max-height: 2em;
+    align-self: center;
+}
+
+h3 {
+    font-size: $meli-product-name-font-size;
+}
