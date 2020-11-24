@@ -1,25 +1,79 @@
-*|* {
-  padding: 0%;
-  margin: 0%;
-  /* border: gray 1px solid; */
+.item-img {
+  width: 680px;
+  max-width: 100%;
 }
 
-.App {
-  background-color: #EEEEEE;
-  height: 100vh;
+.item-principal {
+  width: 40%;
+  padding-top: 32px;
+}
+
+.item-principal button {
+  width: 90%;
+  background-color: #3483fa;
+  border-radius: 4%;
+  border-color: #3483fa;
+  color: white;
+  padding: 5px 0;
+}
+
+.item-principal h3 {
+  padding-top: 16px;
+}
+
+.price {
+  padding: 32px 0px;
+}
+
+.description-section {
+  padding-left: 32px;
+  width: 60%;
+}
+
+.description-title,
+.description-content {
+  padding-bottom: 32px;
 }
 
 .search-bar {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -ms-flex-line-pack: center;
-      align-content: center;
-  background-color: #FFE600;
-  padding: 5px 32px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #ffe600;
+  padding: 7px 10%;
+  height: 100%;
+}
+
+#meli-brand-logo {
+  height: 30px;
+}
+
+#input-with-btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+  width: 100%;
+}
+
+#input-with-btn input {
+  height: 25px;
+  width: 95%;
+  border-radius: 0%;
+}
+
+#input-with-btn button {
+  border-radius: 0%;
+  padding: 2px;
+}
+
+#input-with-btn button img {
+  height: 60%;
 }
 
 .inputspace {
@@ -27,10 +81,47 @@
   width: 70%;
   margin-left: 10px;
   font-size: 18px;
-  /* color: #999999; */
 }
 
-button {
-  height: 100%;
+*|* {
+  padding: 0%;
+  margin: 0%;
+  border: gray 1px solid;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+}
+
+body {
+  background-color: #EEEEEE;
+}
+
+.breadcrumbs {
+  padding: 16px;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+}
+
+.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.product-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  width: 80%;
+  background-color: white;
 }
 /*# sourceMappingURL=App.css.map */

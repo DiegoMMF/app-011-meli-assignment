@@ -1,6 +1,6 @@
-$meli-yellow: #FFE600;
-$meli-blue: #3483FA;
-$meli-light-gray: #EEEEEE;
+$meli-yellow: #ffe600;
+$meli-blue: #3483fa;
+$meli-light-gray: #eeeeee;
 $meli-medium-gray: #999999;
 $meli-dark-gray: #666666;
 $meli-black: #333333;
@@ -15,3 +15,38 @@ $meli-description-title-font-size: 28px;
 $meli-paragraph-font-size: 16px;
 
 $meli-img-width: 680px;
+
+.item-img {
+    width: $meli-img-width;
+    max-width: 100%;
+}
+
+.item-principal {
+    width: 40%;
+    padding-top: $meli-wide-padding;
+    button {
+        width: 90%;
+        background-color: $meli-blue;
+        border-radius: 4%;
+        border-color: $meli-blue;
+        color: white;
+        padding: 5px 0;
+    }
+    h3 {
+        padding-top: $meli-thin-padding;
+    }
+}
+
+.price {
+    padding: $meli-wide-padding 0px;
+}
+
+.description-section {
+    padding-left: $meli-wide-padding;
+    width: 60%;
+}
+
+.description-title,
+.description-content {
+    padding-bottom: $meli-wide-padding;
+}

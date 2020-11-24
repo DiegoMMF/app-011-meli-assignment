@@ -6,15 +6,13 @@ import SearchBar from './components/SearchBar';
 
 function App() {
   return (
-    <div className="App">
       <Router>
-        <SearchBar />
+            <SearchBar />
         <Switch>
           <Route exact path={"/items"} component={ProductDetails} />
           <Route exact path={"/items/:id"} component={SearchResults} />
         </Switch>
-      </Router>
-    </div>
+      </Router >
   );
 }
 

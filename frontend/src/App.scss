@@ -1,13 +1,32 @@
-@use './sass/details';
-@use './sass/results';
-@use './sass/search';
+@import "./sass/details";
+@import "./sass/results";
+@import "./sass/search";
 
 *|* {
   padding: 0%;
   margin: 0%;
-  /* border: gray 1px solid; */
+  border: gray 1px solid;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
 }
-.App {
-  background-color: $light-gray;
-  height: 100vh;
+
+body {
+  background-color: $meli-light-gray;
+}
+
+.breadcrumbs {
+  padding: $meli-thin-padding;
+  align-self: flex-start;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.product-container {
+  display: flex;
+  flex-direction: row;
+  width: 80%;
+  background-color: white;
 }

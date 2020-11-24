@@ -6,8 +6,8 @@ import mlbrand from '../assets/Logo_ML.png'
 export default function SearchBar() {
     return (
         <div className="search-bar">
-            <img src={mlbrand} alt="logo" />
-            <div>
+            <img id="meli-brand-logo" src={mlbrand} alt="logo"/>
+            <div id="input-with-btn">
                 <input type="text" className="inputspace" placeholder="Nunca dejes de buscar" />
                 <button type="submit">
                     <img src={lupa} alt="lupa" />

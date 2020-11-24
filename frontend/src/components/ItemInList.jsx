@@ -26,15 +26,17 @@ export default function ItemInList({ itemsList }) {
     const [product, setProduct] = useState(dummyProduct)
     return (
         // itemsList.map(product => 
+        <div className="container">
+            <img src={product.item.picture} alt="" />
             <div>
-                <img src={product.item.picture} alt="" />
-                <div>
-                    <p>Falta extraer LOCATION!!!</p>
-                    <h3>{product.item.title}</h3>
+                <div className="single-line">
                     {/* Debemos colocar correctamente el importe a figurar */}
                     <h1>{product.item.price.amount}</h1>
+                    <img className="free-shipping-logo" src="" alt="" />
+                    <p>extraer location</p>
                 </div>
+                <h3>{product.item.title}</h3>
             </div>
-        // )
+        </div>
     )
 }

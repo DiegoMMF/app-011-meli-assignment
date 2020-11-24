@@ -24,28 +24,27 @@ const dummyProduct = {
 // export default function ItemDetails({consultedProduct}) {
 export default function ItemDetails() {
     // const [ product, setProduct ] = useState([]);
-    const [ product, setProduct ] = useState(dummyProduct);
+    const [product, setProduct] = useState(dummyProduct);
     /* useEffect(() => {
         setProduct(consultedProduct);
     }) */
     return (
-        <div>
-            <p>(acá van las breadcrumbs)</p>
-            <div>
-            <img src={product.item.picture} alt=""/>
-            <div>
-                <p>{product.item.condition} - {product.item.sold_quantity}</p>
-                <h3>{product.item.title}</h3>
-                {/* Debemos colocar correctamente el importe a figurar */}
-                <h1>{product.item.price.amount}</h1>
-                <button>Comprar</button>
-            </div>
-            </div>
-            <div>
-                <h2>
-                    Descripción del Producto
-                </h2>
-                <p>{product.item.description}</p>
+        <div className="container">
+            <p className="breadcrumbs">(acá van las breadcrumbs)</p>
+            <div className="product-container">
+                <div className="description-section">
+                    <img className="item-img" src={product.item.picture} alt="" />
+
+                    <h2 className="description-title">Descripción del Producto</h2>
+                    <p className="description-content">{product.item.description}</p>
+                </div>
+                <div className="item-principal">
+                    <p>{product.item.condition} - {product.item.sold_quantity}</p>
+                    <h3>{product.item.title}</h3>
+                    {/* Debemos colocar correctamente el importe a figurar */}
+                    <h1 className="price">{product.item.price.amount}</h1>
+                    <button>Comprar</button>
+                </div>
             </div>
         </div>
     )
