@@ -9,7 +9,7 @@ export default function List({ items }) {
         <div className="container">
             {
                 (results !== null) ?
-                    results.map(item => <ItemInList key={item.id} item={item} />) :
+                    results.map(item =>  <ItemInList key={item.id} item={item} />) :
                     <div>Loading...</div>
             }
         </div>

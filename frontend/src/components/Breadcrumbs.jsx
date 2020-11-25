@@ -1,16 +1,26 @@
-import Axios from 'axios';
+import axios from 'axios';
 import React, { useEffect, useState } from 'react'
 
-export default function Breadcrumbs({ categoryID }) {
+export default function Breadcrumbs({ category }) {
     const [state, setState] = useState([]);
+
     useEffect(() => {
-        Axios.get(`https://api.mercadolibre.com/categories/${categoryID}`)
+        const fetchData = async () => {
+            const result = await axios(
+                `https://api.mercadolibre.com/sites/MLA/domain_discovery/search?q=${category}`,
+            );
+            setState(result.data);
+        };
+        fetchData();
+
+        /* axios.get()
             .then(response => setState(response.data.path_from_root))
-            .catch(error => console.log(error))
-    }, []) 
+            .catch(error => console.log(error)) */
+    }, [])
+
     return (
-    <div className="container breadcrumbs">
-        {state.map(item => <span>{item.name}</span>)}
-    </div>
+        <div className="container breadcrumbs">
+            {category}
+        </div>
     )
 }

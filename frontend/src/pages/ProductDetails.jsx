@@ -10,7 +10,7 @@ export default function ProductDetails() {
         <div>
             <SearchBar />
             <p>{new URLSearchParams(location.search).get('q')}</p>
-            <Breadcrumbs categoryID="MLA1271"/>
+            {/* <Breadcrumbs category="test"/> */}
             <ItemAlone />               
         </div>
     )
