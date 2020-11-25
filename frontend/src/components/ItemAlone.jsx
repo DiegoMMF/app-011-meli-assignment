@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+import React, { useState } from 'react'
 
 const dummyProduct = {
     author: {
@@ -30,7 +30,6 @@ export default function ItemDetails() {
     }) */
     return (
         <div className="container">
-            <p className="breadcrumbs">(acá van las breadcrumbs)</p>
             <div className="product-container">
                 <div className="description-section">
                     <img className="item-img" src={product.item.picture} alt="" />
@@ -42,7 +41,7 @@ export default function ItemDetails() {
                     <p>{product.item.condition} - {product.item.sold_quantity}</p>
                     <h3>{product.item.title}</h3>
                     {/* Debemos colocar correctamente el importe a figurar */}
-                    <h1 className="price">{product.item.price.amount}</h1>
+                    <h1 className="price">$ {new Intl.NumberFormat().format(product.item.price.amount)}</h1>
                     <button>Comprar</button>
                 </div>
             </div>

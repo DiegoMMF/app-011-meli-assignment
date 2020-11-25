@@ -6,7 +6,8 @@
   padding: 0%;
   margin: 0%;
   // border: gray 1px solid;
-  font-family: Arial, sans-serif;
+  font-family: 'Inter', sans-serif;
+  color: $meli-black;
 }
 
 body {
@@ -16,6 +17,7 @@ body {
 .breadcrumbs {
   padding: $meli-thin-padding;
   align-self: flex-start;
+  color: $meli-dark-gray;
 }
 
 .container {
@@ -30,4 +32,6 @@ body {
   display: flex;
   flex-direction: row;  
   background-color: white;
+  padding-right: 5%;
+  border: $meli-light-gray 1px solid;
 }

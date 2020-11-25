@@ -28,20 +28,29 @@ $meli-border-radius: 4px;
     flex-direction: row;
     align-items: baseline;
     padding-top: $meli-thin-padding;
-    padding-bottom: $meli-wide-padding;
-    h1 {
-        font-size: $meli-price-font-size;
-    }
+    padding-bottom: $meli-wide-padding;    
     p {
         font-size: $meli-location-font-size;
+        margin-left: auto;
     }
 }
 
+.price-shipping {
+    display: flex;
+    flex-direction: row;
+    font-size: $meli-price-font-size;
+}
+
 .free-shipping-logo {
-    max-height: 2em;
+    max-height: 3em;
     align-self: center;
+    margin: 0 10px;
 }
 
 h3 {
     font-size: $meli-product-name-font-size;
+}
+
+.not-img {
+    width: 100%;
 }

@@ -20,18 +20,25 @@ $meli-search-font-size: 18px;
     display: flex;
     justify-content: end;
     width: 100%;
+    
     input {
-        height: 25px;
+        height: 22px;
         width: 95%;
         border-radius: 0%;
+        border-width: 0px;
+        box-shadow: none;
+        padding: 4px;
+        
     }
-
     button {
         border-radius: 0%;
-        padding: 2px;
+        border-radius: 0%;
+        border-width: 0px;
+        box-shadow: none;
+        padding: 4px;
 
-        img {
-            height: 60%;
+        img {            
+            height: 50%;
         }
     }
 }

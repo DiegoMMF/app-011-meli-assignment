@@ -1,6 +1,6 @@
 .item-img {
-  width: 680px;
   max-width: 100%;
+  width: 680px;
 }
 
 .item-principal {
@@ -57,23 +57,36 @@
   padding-bottom: 32px;
 }
 
-.single-line h1 {
+.single-line p {
+  font-size: 12px;
+  margin-left: auto;
+}
+
+.price-shipping {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
   font-size: 24px;
 }
 
-.single-line p {
-  font-size: 12px;
-}
-
 .free-shipping-logo {
-  max-height: 2em;
+  max-height: 3em;
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
+  margin: 0 10px;
 }
 
 h3 {
   font-size: 18px;
+}
+
+.not-img {
+  width: 100%;
 }
 
 .search-bar {
@@ -103,18 +116,26 @@ h3 {
 }
 
 #input-with-btn input {
-  height: 25px;
+  height: 22px;
   width: 95%;
   border-radius: 0%;
+  border-width: 0px;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  padding: 4px;
 }
 
 #input-with-btn button {
   border-radius: 0%;
-  padding: 2px;
+  border-radius: 0%;
+  border-width: 0px;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  padding: 4px;
 }
 
 #input-with-btn button img {
-  height: 60%;
+  height: 50%;
 }
 
 .inputspace {
@@ -127,7 +148,8 @@ h3 {
 *|* {
   padding: 0%;
   margin: 0%;
-  font-family: Arial, sans-serif;
+  font-family: 'Inter', sans-serif;
+  color: #333333;
 }
 
 body {
@@ -138,6 +160,7 @@ body {
   padding: 16px;
   -ms-flex-item-align: start;
       align-self: flex-start;
+  color: #666666;
 }
 
 .container {
@@ -163,5 +186,7 @@ body {
       -ms-flex-direction: row;
           flex-direction: row;
   background-color: white;
+  padding-right: 5%;
+  border: #EEEEEE 1px solid;
 }
 /*# sourceMappingURL=App.css.map */

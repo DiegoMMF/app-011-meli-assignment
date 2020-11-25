@@ -17,8 +17,8 @@ $meli-paragraph-font-size: 16px;
 $meli-img-width: 680px;
 
 .item-img {
-    width: $meli-img-width;
     max-width: 100%;
+    width: $meli-img-width;
 }
 
 .item-principal {

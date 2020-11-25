@@ -1,15 +1,20 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
+import dummyProduct from '../data/dummyProduct'
+import dummyQuery from '../data/dummyQuery'
 import ItemInList from './ItemInList'
 
-export default function ProductList() {
+
+export default function List({ items }) {
+    const [results, setResults] = useState(items)
+    
     return (
+        /* searchResults.map(...) */
         <div className="container">
-            <p className="breadcrumbs">(acá van las breadcrumbs)</p>
-            <ItemInList />
-            <ItemInList />
-            <ItemInList />
-            <ItemInList />
-            <ItemInList />
+            <ItemInList item={dummyProduct} />
+            <ItemInList item={dummyProduct} />
+            <ItemInList item={dummyProduct} />
+            <ItemInList item={dummyProduct} />
+            <ItemInList item={dummyProduct} />
         </div>
     )
 }
