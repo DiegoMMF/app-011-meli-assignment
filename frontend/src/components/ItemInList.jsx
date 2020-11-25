@@ -2,9 +2,8 @@ import React, { useState } from 'react'
 
 // export default function ItemInList({ itemsList }) {
 export default function ItemInList({ item }) {
-    const [product/* , setProduct */] = useState(item)
+    const [product] = useState(item)
     return (
-        // itemsList.map(product => 
         <div className="product-container">
             <img className="list-img" src={product.picture} alt="" />
             <div className="not-img">

@@ -21,13 +21,8 @@ const dummyProduct = {
     }
 }
 
-// export default function ItemDetails({consultedProduct}) {
-export default function ItemDetails() {
-    // const [ product, setProduct ] = useState([]);
-    const [product, setProduct] = useState(dummyProduct);
-    /* useEffect(() => {
-        setProduct(consultedProduct);
-    }) */
+export default function ItemDetails({ item }) {
+    const [ product ] = useState(item);    
     return (
         <div className="container">
             <div className="product-container">
@@ -40,7 +35,6 @@ export default function ItemDetails() {
                 <div className="item-principal">
                     <p>{product.item.condition} - {product.item.sold_quantity}</p>
                     <h3>{product.item.title}</h3>
-                    {/* Debemos colocar correctamente el importe a figurar */}
                     <h1 className="price">$ {new Intl.NumberFormat().format(product.item.price.amount)}</h1>
                     <button>Comprar</button>
                 </div>
