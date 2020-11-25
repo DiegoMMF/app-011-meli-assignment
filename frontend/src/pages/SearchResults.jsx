@@ -8,24 +8,42 @@ import dummyQuery from '../data/dummyQuery';
 
 export default function Results() {
     const { id } = useParams();
-    const [search, setSearch] = useState({})
+    const [ search, setSearch ] = useState()
     
     // eslint-disable-next-line react-hooks/exhaustive-deps
+    // useEffect(() => {
+    //     axios.get(`https://app-meli-test.herokuapp.com/api/items?q=${id}`)
+    //         .then(response => response.data.results)
+    //         .catch(error => console.error(error))
+    //     /* setSearch(response) */
+    //     console.log("id", id);
+    //     console.log("search", search);
+    // }, [])
+
     useEffect(() => {
-        axios.get(`https://app-meli-test.herokuapp.com/api/items?q=${id}`)
-            .then(response => response.data.results)
-            .catch(error => console.error(error))
-        /* setSearch(response) */
-        console.log("id", id);
-        console.log("search", search);
-    }, [])
+        const fetchData = async () => {
+          const result = await axios(
+            `https://app-meli-test.herokuapp.com/api/items?q=${id}`,
+          );
+     
+          setSearch(result.data);
+
+        };
+     
+        fetchData();
+      }, [id]);
 
     return (
         <div>
             <SearchBar />
-            {/* {search.author.name} */}
-            <Breadcrumbs categoryID="MLA1271"/>
-            <List items={search} />
+            {(search !== undefined) ?
+                <Breadcrumbs categoryID=/* {search.categories[0]} */"MLA1271" /> :
+                <div>Loading...</div>
+            }
+            {(search !== undefined) ?
+                <List items={search.items} /> :
+                <div>Loading...</div>
+            }
         </div>
     )
 }

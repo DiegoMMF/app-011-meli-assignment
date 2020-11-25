@@ -1,20 +1,17 @@
-import React, { useEffect, useState } from 'react'
-import dummyProduct from '../data/dummyProduct'
-import dummyQuery from '../data/dummyQuery'
+import React, { useState } from 'react'
 import ItemInList from './ItemInList'
 
 
 export default function List({ items }) {
-    const [results, setResults] = useState(items)
+    const [ results ] = useState(items)
     
     return (
-        /* searchResults.map(...) */
         <div className="container">
-            <ItemInList item={dummyProduct} />
-            <ItemInList item={dummyProduct} />
-            <ItemInList item={dummyProduct} />
-            <ItemInList item={dummyProduct} />
-            <ItemInList item={dummyProduct} />
+            {
+                (results !== null) ?
+                    results.map(item => <ItemInList key={item.id} item={item} />) :
+                    <div>Loading...</div>
+            }
         </div>
     )
 }
