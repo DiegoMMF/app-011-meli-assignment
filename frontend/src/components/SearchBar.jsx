@@ -10,6 +10,7 @@ export default function SearchBar() {
     
     const handleSubmit = e => {
         e.preventDefault();
+        // redirecting to <SearchResults />
         history.push(`/items/${search}`);
     }
         
@@ -17,7 +18,8 @@ export default function SearchBar() {
         <div className="search-bar">
             <img id="meli-brand-logo" src={mlbrand} alt="logo" />
             <form id="input-with-btn" onSubmit={handleSubmit}>
-                <input type="text" className="inputspace" value={search} onChange={e => setSearch(e.target.value)} placeholder="Nunca dejes de buscar" />
+                <input type="text" className="inputspace" value={search} onChange={e => setSearch(e.target.value)}
+                    placeholder="Nunca dejes de buscar" />
                 <button type="submit" >
                     <img src={lupa} alt="lupa" />
                 </button>

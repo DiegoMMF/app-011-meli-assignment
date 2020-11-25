@@ -10,13 +10,14 @@ export default function Results() {
     const { id } = useParams();
     const [search, setSearch] = useState({})
     
+    // eslint-disable-next-line react-hooks/exhaustive-deps
     useEffect(() => {
-        /* axios.get(`127.0.0.1:4000/api/items?q=${search.id}`) */
-        // axios.get("192.168.1.8:4000/api/items/taichi")
-        axios.get(`https://api.mercadolibre.com/sites/MLA/search?q=${id}`)
-            .then(response => setSearch(response.data.results))
+        axios.get(`https://app-meli-test.herokuapp.com/api/items?q=${id}`)
+            .then(response => response.data.results)
             .catch(error => console.error(error))
-            
+        /* setSearch(response) */
+        console.log("id", id);
+        console.log("search", search);
     }, [])
 
     return (
