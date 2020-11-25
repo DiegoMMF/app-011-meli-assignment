@@ -1,17 +1,16 @@
 import React, { useState } from 'react'
-import { Link } from 'react-router-dom';
+import { useHistory } from 'react-router-dom';
 import '../App.css'
 import lupa from '../assets/ic_Search.png'
 import mlbrand from '../assets/Logo_ML.png'
 
 export default function SearchBar() {
     const [search, setSearch] = useState("");
+    let history = useHistory();
     
     const handleSubmit = e => {
         e.preventDefault();
-        return(
-            <Link to="/items" />
-        )
+        history.push(`/items/${search}`);
     }
         
     return (

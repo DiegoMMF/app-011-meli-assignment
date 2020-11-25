@@ -1,8 +1,8 @@
 import React from 'react'
 import { useLocation } from 'react-router-dom'
+import Breadcrumbs from '../components/Breadcrumbs'
 import ItemAlone from '../components/ItemAlone'
 import SearchBar from '../components/SearchBar'
-
 
 export default function ProductDetails() {
     const location = useLocation()
@@ -10,7 +10,7 @@ export default function ProductDetails() {
         <div>
             <SearchBar />
             <p>{new URLSearchParams(location.search).get('q')}</p>
-            <p className="breadcrumbs">(acá van las breadcrumbs)</p>
+            <Breadcrumbs categoryID="MLA1271"/>
             <ItemAlone />               
         </div>
     )
