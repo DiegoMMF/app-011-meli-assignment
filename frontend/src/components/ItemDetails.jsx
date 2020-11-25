@@ -21,8 +21,7 @@ const dummyProduct = {
     }
 }
 
-export default function ItemDetails({ item }) {
-    const [ product ] = useState(item);    
+export default function ItemDetails({ product }) {
     return (
         <div className="container">
             <div className="product-container">
