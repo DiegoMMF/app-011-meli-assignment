@@ -6,32 +6,44 @@ import List from '../components/List';
 import SearchBar from '../components/SearchBar'
 
 export default function Results() {
-    const [ search, setSearch ] = useState()
-    const location = useLocation()
-    
-    useEffect(() => {
-        const fetchData = async () => {
-          const result = await axios(
-            `https://app-meli-test.herokuapp.com/api/items?q=${new URLSearchParams(location.search).get('q')}`,
-          );     
-          setSearch(result.data);
-        };     
-        fetchData();
-      }, [location]);
+  const [search, setSearch] = useState()
+  const [categoryID, setCategoryID] = useState()
+  const location = useLocation()
 
-    
+  useEffect(() => {
+    // buscamos detalles del item por medio de la custom api
+    const fetchData = async () => {
+      const query = new URLSearchParams(location.search).get('q')
+      const result = await axios(
+        `https://app-meli-test.herokuapp.com/api/items?q=${query}`,
+      );
+      setSearch(result.data);
+      // buscamos id de la categoría del producto
+      if (search !== undefined) {
+        const fetchResult = await axios(
+          `https://api.mercadolibre.com/sites/MLA/domain_discovery/search?q=${query}`,
+        );
+        setCategoryID(fetchResult.data);
+      }
+    };
+    fetchData();
+  }, [location, search]);
 
-    return (
-        <div>
-            <SearchBar />
-            {/* {(search !== undefined) ?
-                <Breadcrumbs category={search.categories[0]} /> :
-                <div>Loading breadcrumbs...</div>
-            } */}
-            {(search !== undefined) ?
-                <List items={search.items} /> :
-                <div>Loading products...</div>
-            }
-        </div>
-    )
+
+
+  return (
+    <div>
+      <SearchBar />
+      {/* {
+        (search !== undefined) ?
+          <Breadcrumbs category={categoryID} /> :
+          <div>Loading breadcrumbs...</div>
+      } */}
+      {
+        (search !== undefined) ?
+          <List items={search.items} /> :
+          <div>Loading products...</div>
+      }
+    </div>
+  )
 }

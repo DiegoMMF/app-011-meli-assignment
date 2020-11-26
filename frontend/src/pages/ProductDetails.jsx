@@ -12,11 +12,13 @@ export default function ProductDetails() {
 
 
     useEffect(() => {
+        // buscamos, por medio de la custom api, productos según query ingresada
         const fetches = async () => {
             const result = await axios(
                 `https://app-meli-test.herokuapp.com/api/items/${id}`,
             );
             setProduct(result.data);
+            // buscamos id de la categoría del producto
             if (product !== undefined) {
                 const fetchResult = await axios(
                     `https://api.mercadolibre.com/items/${product.item.id}`,
@@ -32,7 +34,10 @@ export default function ProductDetails() {
     return (
         <div>
             <SearchBar />
-            <Breadcrumbs category={categoryID}/>
+            {(product !== undefined) ?
+                <Breadcrumbs category={categoryID} /> :
+                <div>Loading breadcrumbs...</div>
+            }
             {(product !== undefined) ? <ItemDetails product={product} /> : null}
         </div>
     )
