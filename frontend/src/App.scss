@@ -38,3 +38,10 @@ body {
   padding-right: 5%;
   border: $meli-light-gray 1px solid;
 }
+
+.loading {
+  display: flex;
+  justify-content: center;
+  padding: 5%;
+  align-content: center;
+}

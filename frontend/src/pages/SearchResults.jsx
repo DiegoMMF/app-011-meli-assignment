@@ -23,7 +23,7 @@ export default function Results() {
         const fetchResult = await axios(
           `https://api.mercadolibre.com/sites/MLA/domain_discovery/search?q=${query}`,
         );
-        setCategoryID(fetchResult.data);
+        setCategoryID(fetchResult.data.category_id);
       }
     };
     fetchData();
@@ -35,14 +35,14 @@ export default function Results() {
     <div>
       <SearchBar />
       {
-        (search !== undefined) ?
-          <Breadcrumbs category={categoryID} /> :
-          <div>Loading breadcrumbs...</div>
+        (search !== undefined) 
+          ? <Breadcrumbs category={categoryID} /> 
+          : <div className="loading">Loading breadcrumbs...</div>
       }
       {
-        (search !== undefined) ?
-          <List items={search.items} /> :
-          <div>Loading products...</div>
+        (search !== undefined) 
+          ? <List items={search.items} /> 
+          : <div className="loading">Loading products...</div>
       }
     </div>
   )

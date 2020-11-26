@@ -34,11 +34,16 @@ export default function ProductDetails() {
     return (
         <div>
             <SearchBar />
-            {(product !== undefined) ?
-                <Breadcrumbs category={categoryID} /> :
-                <div>Loading breadcrumbs...</div>
+            {
+                (product !== undefined) 
+                    ? <Breadcrumbs category={categoryID} /> 
+                    : <div className="loading">Loading breadcrumbs...</div>
             }
-            {(product !== undefined) ? <ItemDetails product={product} /> : null}
+            {
+                (product !== undefined) 
+                    ? <ItemDetails product={product} /> 
+                    : <div className="loading">Loading products...</div>
+            }
         </div>
     )
 }

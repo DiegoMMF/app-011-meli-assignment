@@ -198,4 +198,16 @@ body {
   padding-right: 5%;
   border: #EEEEEE 1px solid;
 }
+
+.loading {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 5%;
+  -ms-flex-line-pack: center;
+      align-content: center;
+}
 /*# sourceMappingURL=App.css.map */
