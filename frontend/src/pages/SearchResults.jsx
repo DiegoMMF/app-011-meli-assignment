@@ -34,11 +34,11 @@ export default function Results() {
   return (
     <div>
       <SearchBar />
-      {/* {
+      {
         (search !== undefined) ?
           <Breadcrumbs category={categoryID} /> :
           <div>Loading breadcrumbs...</div>
-      } */}
+      }
       {
         (search !== undefined) ?
           <List items={search.items} /> :

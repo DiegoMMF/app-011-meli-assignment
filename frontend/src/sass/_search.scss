@@ -18,7 +18,7 @@ $meli-search-font-size: 18px;
 
 #input-with-btn {
     display: flex;
-    justify-content: end;
+    justify-content: flex-end;
     width: 100%;
     
     input {
@@ -28,6 +28,7 @@ $meli-search-font-size: 18px;
         border-width: 0px;
         box-shadow: none;
         padding: 4px;
+        font-size: $meli-search-font-size;
         
     }
     button {
