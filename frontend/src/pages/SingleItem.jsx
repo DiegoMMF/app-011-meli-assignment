@@ -29,7 +29,7 @@ export default function ProductDetails() {
         fetches();
     }, [id, product]);
 
-
+    // TODO #14
 
     return (
         <div>

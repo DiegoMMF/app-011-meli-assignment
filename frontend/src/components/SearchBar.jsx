@@ -7,6 +7,7 @@ import mlbrand from '../assets/Logo_ML.png'
 export default function SearchBar() {
     // TODO #4
     // TODO #5
+    // TODO #8
     const [search, setSearch] = useState("");
     let history = useHistory();
     

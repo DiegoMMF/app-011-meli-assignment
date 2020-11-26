@@ -5,7 +5,7 @@ export default function Breadcrumbs({ category }) {
     const [state, setState] = useState([]);
 
     useEffect(() => {
-
+        // TODO #9
         (async () => {
             const result = await axios(
                 `https://api.mercadolibre.com/categories/${category}`,

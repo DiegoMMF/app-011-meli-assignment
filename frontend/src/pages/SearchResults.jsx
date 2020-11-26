@@ -7,24 +7,24 @@ import SearchBar from '../components/SearchBar'
 
 export default function Results() {
   const [search, setSearch] = useState()
-  const [categoryID, setCategoryID] = useState()
+  const [categoryID, setCategoryID] = useState("")
   const location = useLocation()
 
   useEffect(() => {
     // buscamos detalles del item por medio de la custom api
     const fetchData = async () => {
+      // TODO #7
       const query = new URLSearchParams(location.search).get('q')
       const result = await axios(
         `https://app-meli-test.herokuapp.com/api/items?q=${query}`,
       );
       setSearch(result.data);
       // buscamos id de la categoría del producto
-      if (search !== undefined) {
-        const fetchResult = await axios(
-          `https://api.mercadolibre.com/sites/MLA/domain_discovery/search?q=${query}`,
+      const fetchResult = await axios(
+          `https://api.mercadolibre.com/sites/MLA/domain_discovery/search?q=${search}`,
         );
-        setCategoryID(fetchResult.data.category_id);
-      }
+        setCategoryID(fetchResult.data);
+      
     };
     fetchData();
   }, [location, search]);
