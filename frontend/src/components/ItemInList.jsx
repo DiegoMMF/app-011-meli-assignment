@@ -8,7 +8,6 @@ export default function ItemInList({ item }) {
             <img className="list-img" src={product.picture} alt="" />
             <div className="not-img">
                 <div className="single-line">
-                    {/* Debemos colocar correctamente el importe a figurar */}
                     <div className="price-shipping">
                         <h1>$ {new Intl.NumberFormat().format(product.price.amount)}</h1>
                         <img className="free-shipping-logo" src="../assets/ic_shipping.png" alt="" />

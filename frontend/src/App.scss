@@ -16,6 +16,8 @@ body {
 
 .breadcrumbs {
   padding: $meli-thin-padding;
+  display: flex;
+  flex-direction: row;
   align-self: flex-start;
   color: $meli-dark-gray;
 }

@@ -33,7 +33,7 @@ export default function ProductDetails() {
         <div>
             <SearchBar />
             <Breadcrumbs category={categoryID}/>
-            {(product !== undefined) ? <ItemDetails product={product} /> : null} */}
+            {(product !== undefined) ? <ItemDetails product={product} /> : null}
         </div>
     )
 }
