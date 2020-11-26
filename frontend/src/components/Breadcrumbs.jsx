@@ -20,8 +20,7 @@ export default function Breadcrumbs({ category }) {
 
     return (
         <div className="container breadcrumbs">
-            {/* actualizar con las categorías correspondientes */}
-            {category}
+            Hola
         </div>
     )
 }
