@@ -6,13 +6,10 @@ import mlbrand from '../assets/Logo_ML.png'
 
 export default function SearchBar() {
     // TODO #4
+    // TODO #5
     const [search, setSearch] = useState("");
     let history = useHistory();
     
-    /**
-     * redirects to <SearchResults />
-     * @param {event} e 
-     */
     const handleSubmit = e => {
         e.preventDefault();
         history.push(`/items?q=${search}`);
