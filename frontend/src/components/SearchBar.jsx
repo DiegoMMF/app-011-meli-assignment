@@ -14,8 +14,8 @@ export default function SearchBar() {
      * @param {event} e 
      */
     const handleSubmit = e => {
-        // e.preventDefault();
-        history.push(`/items/${search}`);
+        e.preventDefault();
+        history.push(`/items?q=${search}`);
     }
         
     return (
