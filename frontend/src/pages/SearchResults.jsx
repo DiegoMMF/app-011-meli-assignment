@@ -14,7 +14,7 @@ export default function Results() {
     // buscamos detalles del item por medio de la custom api
     const fetchData = async () => {
       // TODO #7
-      const query = new URLSearchParams(location.search).get('q')
+      const query = new URLSearchParams(location.search).get('search')
       const result = await axios(
         `https://app-meli-test.herokuapp.com/api/items?q=${query}`,
       );

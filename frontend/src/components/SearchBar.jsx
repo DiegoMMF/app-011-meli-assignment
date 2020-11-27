@@ -13,7 +13,7 @@ export default function SearchBar() {
     
     const handleSubmit = e => {
         e.preventDefault();
-        history.push(`/items?q=${search}`);
+        history.push(`/items?search=${search}`);
     }
         
     return (
