@@ -31,7 +31,7 @@ export default function SearchBar() {
     
     const handleSubmit = e => {
         e.preventDefault();
-        history.push(`/items?q=${urlEncoder(search)}`);
+        history.push(`/items?search=${urlEncoder(search)}`);
     }
         
     return (
