@@ -24,7 +24,7 @@ export default function SearchBar() {
             <form id="input-with-btn" onSubmit={handleSubmit}>
                 <input type="text" className="inputspace" value={search} onChange={e => setSearch(e.target.value)}
                     placeholder="Nunca dejes de buscar" />
-                <button type="submit" >
+                <button type="submit" id="lupa">
                     <img src={lupa} alt="lupa" />
                 </button>
             </form>

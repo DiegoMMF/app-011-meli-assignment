@@ -42,7 +42,13 @@ body {
 
 .loading {
   display: flex;
-  justify-content: center;
+  justify-content: space-evenly;
   padding: 5%;
-  align-content: center;
+  align-items: center;
+}
+
+#yellow {
+  background-color: $meli-yellow;
+  height: 100vh;  
+  justify-content: center;
 }
